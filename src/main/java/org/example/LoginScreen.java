@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Login class its resposible to create "mock" users and simulates a login with the mock users
- * @author Felipe Roberto (SiegDev) RA:226752
+ * A classe login é reponsavel por criar usuários falsos, para uma simulação de login
+ * @author Icaro Iyusuka RA:200426
  */
 
 public class LoginScreen {
@@ -13,7 +13,7 @@ public class LoginScreen {
     private static Map<String,String> userDatabase;
 
     /**
-     * LoginScreen not needs a parameters to instance, automaticaly creates a userDatabase and put two registers
+     * O LoginScreen não precisa de parametro para instanciar, e cria o userDatabase e gera dois registradores.
      */
     public LoginScreen() {
         userDatabase = new HashMap<>();
@@ -22,10 +22,10 @@ public class LoginScreen {
     }
 
     /**
-     * Login method, receives a string user and string password and checks if the user exists in the database
-     * @param User A string with the username or userlogin
-     * @param password A string with the password of the userlogin
-     * @return Boolean true if the user and passwords is correctly and false if not
+     * O metodo login recebe e verifica a string user e a string senha, para ver se existem no banco de dados
+     * @param User é string usada para nome do usuário
+     * @param password é a string para a senha do usuário
+     * @return Boolean é para ver se é verdadeiro ou falso, um meio de validar os dados recebidos
      */
     public boolean login(String User, String password) {
 
@@ -39,10 +39,10 @@ public class LoginScreen {
     }
 
     /**
-     * addUser method, receives a string user and string password and put in the userDatabase hashmap to mock users to do tests
-     * @param user a string with the username
-     * @param password a string with the password of user
-     * @Return void return nothing
+     * O metodo addUser, recebe as string user, como a string password e coloca no hashmap userDatabase para simular usuarios para testes
+     * @param user é a string para o usuario
+     * @param password é a string para a senha do usuario
+     * @Return void não retorna nada
      */
     public void addUser(String user, String password) {
 
